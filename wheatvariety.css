@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#steps{
+     margin-top: 20px;
+     text-align: center;
+ }
+
+ .container1{
+    background-color: wheat;
+    background-image: url(/images/variety.png);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 98%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 1%;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    /* background: url(/images/soilprep.png); */
+
+ }
+ .container1 h2{
+     text-align: center;
+     font-size: 28px;
+     background-color: yellow;
+  }
+ .container1 h3{
+     margin-left: 20px;
+ }
+ .container1 #text{
+    margin-left: 2%;
+    font-size: 25px;
+    width: 96%;
+    height: fit-content;
+    text-align: left;
+    background-color: rgb(242, 238, 238);
+    border-radius: 2px;
+    padding: 5px;
+    list-style:square;
+    opacity: 70%;
+    
+}
+.container1 iframe{
+    margin-top: 10px;
+    margin-left: 300px;
+    border: 5px solid ivory;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align:center ;
+    margin-bottom: 0;
+    margin-top: 320px;
+    padding: 10px;
+    background-color: rgb(208, 208, 208);
+}
+
+
+
+
+
+
+
+
+
+/* Navigation Bar CSS */
+
+.navbar{
+    display: inline-block;
+   /* text-align: center; */
+   position: relative; 
+   margin-top: 10px;
+   width: 100%;
+   top: 0%;
+   left: 0%;
+   flex-direction:column;
+    /* transform: translate(-50%,-50%); */
+    }
+ 
+  
+.navbar li a{
+    text-decoration: none;
+    color:white;
+  }
+  .navbar li a.active{
+    text-decoration: underline;
+  }
+  
+  .navbar li:hover{
+    color: rgb(255, 171, 45);
+    /* background-color: greenyellow; */
+   }
+  /* .navbar ul{
+     position:relative;z-index:99
+  } */
+  .navbar > ul{
+  
+    list-style: none ;
+    padding: 5px;
+    margin: 0;
+    display: inline-block;
+    background-color: green;
+    width: 100%;
+    border-radius: 0px;
+    
+  }
+  .navbar >ul>li{
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Baloo Bhaina 2', cursive;  word-spacing: 5px;
+    float: left;
+    width: 200px;
+    height: 40px;
+    z-index: 9999;
+    line-height: 45px;
+    text-align: center;
+   
+  
+   
+   
+  
+  }
+  .dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 9999;
+    }
+  .dropdown li {
+    background-color: green;
+    display: none;
+    font-size: large;
+    z-index: 9999;
+      
+   }
+  .dropdown a{
+    text-decoration: none;
+    color:white;
+    z-index: 9999;
+   
+  }
+  
+  .dropdown li a:hover{
+    color: rgb(255, 171, 45);
+     z-index: 9999;
+  
+   }
+  
+  .navbar li:hover> .dropdown{
+    perspective: 1000px;
+    z-index: 9999;
+  
+  
+  }
+  
+  .navbar li:hover > .dropdown li{
+    transform-origin: top center;
+     display: block;
+    z-index: 9999;
+   }
+   
+   .dropdown2{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+   }
+  .dropdown2 li{
+    background-color: green;
+    display: none;
+    font-size: large;
+    }
+  
+  .dropdown2 a{
+    text-decoration: none;
+    color: white;
+  }
+  .dropdown2 li a:hover{
+    color: rgb(255, 171, 45);
+   
+  }
+  
+  .navbar li:hover> .dropdown2{
+    perspective: 1000px;
+  
+  }
+  
+  .navbar li:hover > .dropdown2 li{
+    transform-origin: top center;
+    opacity: 100%;
+    display: block;
+   }
+     
+  
+   .dropdown3{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+   }
+  .dropdown3 li{
+    background-color:green;
+      display: none;
+    font-size: medium;
+    line-height: 40px;
+    }
+    .dropdown3 a{
+      text-decoration: none;
+      color: white;
+    }
+  
+  .dropdown3 li a:hover{
+    color: rgb(255, 171, 45);
+   
+  }
+  
+  .navbar li:hover> .dropdown3{
+    perspective: 1000px;
+  
+  }
+  
+  .navbar li:hover > .dropdown3 li{
+    transform-origin: top center;
+    opacity: 100%;
+    display: block;
+   }
+  
+  
+  
+  
+  .navbar ul{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+  

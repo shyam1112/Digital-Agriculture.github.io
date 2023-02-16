@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keuwords" content="agriculture , crops , farming , seeds , cultivation , harvest">
+  <title>Digital Agriculture</title>
+
+  <link rel="stylesheet" href="Home.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon_io/site.webmanifest">
+
+</head>
+<body>
+ 
+   <div class="language_translator" id="google_translate_element">
+<p id="change_lang">Change language </p>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoodleTranslate"></script>
+    <script>
+      function loadGoodleTranslate(){
+        new google.translate.TranslateElement(
+          "google_translate_element"
+        )
+      }
+     </script>
+
+     <style>
+       #google_translate_element{
+         width: 160px;
+         margin-left: 5px;
+         margin-top: 5px;
+         text-align: center;
+         border-radius: 5px;
+         background-color: green;
+       }
+       #change_lang{
+         color: white;
+         font-size: 12px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+     </style>
+   </div> 
+      
+    
+    
+   
+ <div class="logo">
+  <a href="Home.html"><img src="/images/29221592-removebg-preview.png " width="120px" height="120px"></a>
+  <a href="Home.html"><h1><b>Digital Agriculture</b></h1></a>
+ </div>
+
+ <br>
+ <br>
+ <br>
+ <hr> 
+
+ <!-- NAVIGATION BAR CODE -->
+
+<header> 
+<div class="navbar">
+  <ul>
+   <li><a href="index.html"></a><b>Home</b></a></li>
+
+    <li><b>About Us</b>
+      <ul class="dropdown">
+         <li><a href="team.html"><b>Team</b></a></li>
+         <li><a href="contact/contact.html"><b>Contact</b></a></li>
+      </ul>
+      
+    </li>
+    <li><b>Learn Crops</b>
+      <ul class="dropdown2">
+        <li><a href="wheat.html"><b>Wheat</b></a></li>
+        <li><a href="corn.html"><b>Corn</b></a></li>
+        <li><a href="Rice.html"><b>Rice</b></a></li>
+        <li><a href="More2.html"><b>More...</b></a></li>
+      </ul>
+    </li>
+    <li><a href="Farming.html"><b>Farming</b></a>
+      <ul class="dropdown3">
+        <li><a href="Agriculture.html"><b>Agriculture</b></a>
+          <li><a href="SubF.html"><b>Subsistence Farming</b></a></li>
+ 
+        <li><a href="shiftingagri.html"><b>Shifting Agriculture</b></a></li>
+          <li><a href="Plantingagri.html"><b>Plantation Agriculture</b></a></li>
+          <li><a href="Intensive.html"><b>Intensive Farming</b></a></li>
+
+          <li><a href="OF.html"><b>Organic Farming</b></a></li>
+
+        <li><a href="More3.html"><b>More...</b></a></li>
+      </ul>
+    </li>
+    <li><a href="/facilities.html"> <b>Facilities</b></a></li>
+
+   <li class="sign-in" id="signin"><a href="signin.html">  <button onclick="togglePopup()" class="first-button"><b>Sign in</b></button></a> 
+   </header>
+
+ <style>
+  .first-button:hover{
+    background-color: rgb(76, 238, 89);
+    color: black;
+   }
+  .first-button {
+border-radius: 10px;
+border: none;
+position: absolute;
+width: fit-content;
+top: 55%;
+left: 110%;
+color: white;
+font-size: 18px;
+font-family: 'Baloo Bhaina 2', cursive;  word-spacing: 5px;
+font-weight: 500;
+padding: 2px 5px;
+transform: translate(-50%, -50%);
+background: green;
+/* box-shadow:  18px 18px 25px #1e1e1e, 
+             -15px -15px 25px #1e1e1e; */
+/* transition: box-shadow .35s ease !important; */
+outline: none;
+}
+
+.first-button:active {  
+background: linear-gradient(145deg, green, green);
+/* box-shadow:  5px 5px 10px green, 
+             -5px -5px 10px green; */
+border: none;
+}
+/* Popup active */
+.popup.active .content {
+transition: all 300ms ease-in-out;
+transform: translate(-50%,-50%) scale(1);
+}
+</style>
+ 
+
+</li>
+</ul>
+</div>
+<hr> 
+
+  
+
+ <!-- WEATHER APPLICATION CODE START -->
+<div id="weather"> 
+  <form id="search-form">
+      <input type="search"
+      placeholder=" Enter City Name" 
+      id="search-input"
+      required
+      autocomplete="off">
+
+      <br>
+  <button id="search-button">Go</button>
+  </form>
+  
+  <main id="app-container">
+
+      <img id="temp-icon" src="/images/sun.png" alt="">
+
+      <div id="location">
+          <p> </p>
+      </div>
+          <div id="temp">
+               <p><span id="temp-value">-</span><span id="temp-unit" >&#176c</span> </p>
+               <div id="climate">
+                  <p></p>
+              </div>
+          </div>      
+
+  </main>
+
+  <style>
+      *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* body{
+height: 100px;
+background-color: ivory;
+} */
+
+#search-form
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+
+#temp
+{
+text-align: center;
+margin-left: 150px;
+}
+
+#temp #temp-unit
+{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.5rem;
+color: black;
+
+}
+#temp #temp-value
+{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.5rem;
+color: black;
+margin-left: -200px;
+
+
+}
+#climate
+{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.5rem;
+color: black;
+text-align: center;
+margin-left: 1px;
+margin-top: -20px;
+
+
+
+}
+#location
+{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.5rem;
+color: black;
+text-align: center;
+margin-left: 150px;
+margin-top: -60px;
+
+
+}
+
+
+
+
+#temp-icon
+{
+margin: 0rem;
+margin-top: -20px;
+width: 23%;
+height: auto;
+}
+
+
+main{
+
+padding: 20px;
+margin-top: 10px;
+background-color: rgb(38, 172, 250);
+border-radius: 20px;
+width: 350px;
+height: 100px;
+display: block;
+margin-left: 1050px;
+margin-right: auto;
+box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2);
+
+}
+
+
+#search-button
+{
+color: white;
+text-transform: uppercase;
+text-decoration: none;
+ background: gray;
+border-radius: 5px;
+margin-left: 5px;
+padding: 2px;
+border: 2px solid #494949;
+display: inline-block;
+transition: all 0.4 ease 0s;
+}
+#search-button:hover{
+
+color: #ffffff;
+background: green;
+border-color: wheat;
+transition: all 0.4s ease 0s;
+
+
+
+}
+
+#search-input
+{
+width: 250px;
+overflow: hidden;
+font-size: 15px;
+margin-left: 1020px;
+padding: 3px 0;
+border-bottom: 2px solid black;
+color: black;
+outline: none;
+background: none;
+}
+input
+{
+border: none;
+}
+
+
+
+
+
+
+  </style>
+
+  <script>
+
+let loc =document.getElementById("location");
+let tempicon=document.getElementById("temp-icon");
+let tempvalue=document.getElementById("temp-value");
+let climate =document.getElementById("climate");
+let iconfile;
+const searchInput=document.getElementById("search-input");
+const searchButton=document.getElementById("search-button");
+
+searchButton.addEventListener('click', (e)=>
+{
+
+e.preventDefault();
+getWeather(searchInput.value);
+searchInput.value='';
+
+
+});
+
+
+
+const getWeather=async (city)=>
+{
+  try{
+
+      const response= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ce589987da258b9714060fc06b1b5c8b
+
+      `,
+ 
+          {mode: 'cors'}
+      );
+
+      const weatherData= await response.json();
+      console.log(weatherData);
+      const{name}=weatherData;
+      const{feels_like}=weatherData.main;
+      const{id,main}=weatherData.weather[0];
+      loc.textContent=name;
+      climate.textContent=main;
+      tempvalue.textContent=Math.round(feels_like-273);
+      if(id<300 && id>200)
+      {
+          tempicon.src="./icons/thunderstorm.svg"
+      }
+     else  if(id<400 && id>300)
+      {
+          tempicon.src="./icons/cloud-solid.svg"
+      }
+     else if(id<600&& id>500)
+      {
+          tempicon.src="./icons/rain.svg"
+      }
+     else  if(id<700 && id>600)
+      {
+          tempicon.src="./icons/snow.svg"
+      }
+     else  if(id<800 && id>700)
+      {
+          tempicon.src="./icons/clouds.svg"
+      }
+       else if(id==800)
+      {
+          tempicon.src="./icons/clouds-and-sun.svg"
+      }
+
+
+
+ 
+  }
+catch(error)
+{
+  alert('city not found');
+}
+
+
+};
+
+
+
+
+window.addEventListener("load" ,()=>{
+
+let long;
+let lat;
+
+if(navigator.geolocation)
+{
+
+  navigator.geolocation.getCurrentPosition((position)=>
+  {
+
+ 
+  
+  long=position.coords.longitude;
+  lat=position.coords.latitude;
+  const proxy="https://cors-anywhere.herokuapp.com/";
+
+      const api=`${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=ce589987da258b9714060fc06b1b5c8b
+
+      `
+
+      fetch(api).then((response)=>{
+
+          return response.json();
+
+
+      })
+
+      .then (data =>
+          {
+
+                  const{name}=data;
+                  const{feels_like}=data.main;
+                  const{id,main}=data.weather[0];
+
+
+                  loc.textContent=name;
+                  climate.textContent=main;
+                  tempvalue.textContent=Math.round(feels_like-273);
+                  if(id<300 && id>200)
+                  {
+                      tempicon.src="./icons/thunderstorm.svg"
+                  }
+                 else  if(id<400 && id>300)
+                  {
+                      tempicon.src="./icons/cloud-solid.svg"
+                  }
+                 else if(id<600&& id>500)
+                  {
+                      tempicon.src="./icons/rain.svg"
+                  }
+                 else  if(id<700 && id>600)
+                  {
+                      tempicon.src="./icons/snow.svg"
+                  }
+                 else  if(id<800 && id>700)
+                  {
+                      tempicon.src="./icons/clouds.svg"
+                  }
+                   else if(id==800)
+                  {
+                      tempicon.src="./icons/clouds-and-sun.svg"
+                  }
+
+
+
+
+
+                  console.log(data);
+
+
+          })
+
+
+
+}
+  
+  
+  
+  )}
+
+
+})
+  </script>
+</div>
+<!-- WEATHER APPLICATION CODE END -->
+
+
+
+<!-- SLIDER IMAGES CODE START -->
+
+ <div id="slider">
+   
+
+  <ul id="slideWrap"> 
+
+ 
+    <li><img src="/images/sliderimg/1.png" width="1450px" alt="Loading..."></li>
+
+ 
+    <li><img src="/images/sliderimg/2.png" width="1450px" alt="Loading..."></li>
+ 
+    <li><img src="/images/sliderimg/3.png" width="1450px" alt="Loading..."></li>
+ 
+    <li><img src="/images/sliderimg/4.png"  width="1450px"alt="Loading..."></li>
+    <li><img src="/images/sliderimg/5.png"  width="1450px"alt="Loading..."></li>
+  </ul>
+  
+ 
+  <a id="prev" href="#">&#8810;</a>
+  <a id="next" href="#">&#8811;</a>
+
+  <script>
+    var responsiveSlider = function() {
+
+var slider = document.getElementById("slider");
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function() {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function() {
+  if(count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function() {
+  if(count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function() {
+  nextSlide();
+});
+
+prev.addEventListener("click", function() {
+  prevSlide();
+});
+
+setInterval(function() {
+  nextSlide()
+}, 5000);
+
+};
+
+window.onload = function() {
+responsiveSlider();  
+}
+
+  </script>
+
+</div>
+
+<!-- SLIDER IMAGES CODE END -->
+
+    
+
+
+ <div class="container1" >
+
+<marquee width="100%" direction="right" height="100px">
+  <h3>Your destination for everything agriculture is here.
+    Learn and Grow with Digital Agriculture.</h3>
+</marquee>
+   
+ </div>
+
+ <div class="container2">
+<h2 id="schemes"> <b>  10 Important Government Schemes In Indian Agriculture Sector</b>
+
+ </h2>
+ <h3>Government schemes: These are the most important agriculture schemes introduced by the government for improvement in Indian Agriculture Sector.
+ <br>
+ <br>
+  <p>
+  They are launched for the purpose of improving the livelihood of the people and providing security for leading a better life. Each scheme is launched to provide benefits to the individual in certain areas of their life. Some schemes grant financial security while others aim to provide socio-economic measures.</p>
+  <a href="10schemes.html"> 
+    <br>
+    <br>  
+    See detailed article
+    </a>
+ </h3>
+
+
+  
+ </div>
+
+ <div class="container3">
+  <h2> <b> Sustainable Agriculture </b>
+  </h2>
+  <h3>Sustainable agriculture is farming in sustainable ways meeting society's present food and textile needs, without compromising the ability for current or future generations to meet their needs. It can be based on an understanding of ecosystem services
+    Sustainable agriculture consists of environment friendly methods of farming that allow the production of crops or livestock without damage to human or natural systems. Elements of sustainable agriculture can include permaculture, agroforestry, mixed farming, multiple cropping, and crop rotation.
+  <br>
+    <a href="sustainableagri.html"> 
+      <br>
+      <br>  
+      See more about sustainable agriculture.
+      </a>
+  </h3>
+  
+     
+   </div>
+
+   <div class="container4">
+    <h2>  Together we can save more.
+    </h2>
+    <h3>
+      How farming can help to heal nature ?     </h3>
+      <p>At nearly eight billion people, the global population has put a lot of demands on the planet. Just producing enough food for everyone contributes between 19 and 29% of all greenhouse gas emissions. The enormous swathes of land required for traditional agriculture has been one of the main drivers of environmental degradation, habitat loss and the collapse of nature.
+        <br>
+        The destruction doesn’t just go one way. Climate breakdown has already been linked to smaller harvests. For farmers, it is not just the diet that suffers, but whole livelihoods. In India, climate change has been linked to higher suicide rates, as harvests fail and businesses fold.
+<br>
+This is all happening already, with a world population of less than eight billion. Failing to allow everyone access to food, and wasting it as a result, has meant that despite producing an abundance, famine and hunger have not been eradicated. By the middle of this century, the population is due to hit 10 billion, according to the UN’s calculations.
+
+
+        <a href="homecontainer4.html"> 
+          <br>
+          <br>  
+          See more details...
+          </a> 
+      </p>
+    
+     </div>
+
+ <div class="container5">
+<h2>  Why we need to know agriculture ?
+</h2>
+<h3>Agriculture plays a critical role in the entire life of a given economy. Agriculture is the backbone of the economic system of a given country. In addition to providing food and raw material, agriculture also provides employment opportunities to a very large percentage of the population.
+  <a href="whyagriculture.html"> 
+    <br>
+    <br>  
+    <br>
+    See Why is Agriculture Important and its Role in Everyday Life
+    </a>
+</h3>
+
+ </div>
+<br>
+<br>
+
+<hr>
+
+<div class="container6">
+
+  <h2>Some Useful Links Related To Farming:
+<br>
+<br>
+    <ul>
+      <li>
+        <a href="https://bimstec.org/" target="_BLANK">BIMSTEC</a>
+      </li>
+      <li>
+        <a href="http://www.asrb.org.in/" target="_BLANK">
+          Agricultural Scientists Recruitment Board</a>
+      </li>
+      <li>
+        <a href="https://fvms.icar.gov.in/" target="_BLANK">Foreign Visit Management System of DARE-ICAR
+        </a>
+
+      </li>
+
+      <li>
+        <a href="https://www.india.gov.in/" target="_BLANK">Government Of India</a>
+
+      </li>
+
+      <li>
+        <a href="https://agricoop.nic.in/" target="_BLANK">Department of Agriculture & Cooperation, Ministry of Agriculture, Government of India
+        </a>
+
+      </li>
+      <li>
+        <a href="https://dahd.nic.in/" target="_BLANK">Department of Animal Husbandry, Dairying & Fisheries, Ministry of Agriculture, Government of India
+
+        </a>
+      </li>
+      <li>
+        <a href="http://www.dbtindia.nic.in/">
+          Department of Biotechnology, Ministry of Science and Technology, Government of India</a>
+      </li>
+
+      <li>
+        <a href="https://dst.gov.in/">Department of Science and Technology, Ministry of Science and Technology, Government of India
+        </a>
+      </li>
+    </ul>
+  </h2>
+
+</div>
+
+<section class="footer">
+  <div class="social" id="social-icons">
+    <a href="#"><i class="fab fa-mail"><img src="/images/email.png" alt="loading..." width="25px"></i></a>
+    <a href="#"><i class="fab fa-instagram"><img src="/images/instagram.png" alt="loading..." width="25px"></i></a>
+    <a href="#"><i class="fab fa-twitter"><img src="/images/twitter.png" alt="loading..." width="25px"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"><img src="/images/facebook2.png" alt="loading..." width="25px"></i></a>
+  </div>
+
+  <ul class="footer-list">
+    <li>
+      <a href=" " id="">Home</a>
+    </li>
+     <li>  <a href=" ">About</a>
+     </li>
+     <li> <a href=" ">Contact Us</a>
+     </li> 
+     <li>  <a href=" ">Terms And Conditions</a>
+     </li>
+     <li> <a href=" ">Privacy Policy </a>
+    </li>
+  </ul>
+  <p class="copyright" id="copyright-text">
+<br>
+   Copyright &copy;	2021 Digital Agriculture
+  </p>
+
+
+  <style>
+    .footer{
+      margin-top: 0px;
+      padding: 20px;
+      text-align: center;
+      background-color: rgb(205, 205, 205);
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+
+
+
+       
+    }
+    .footer-list li{
+      list-style: none;
+      display: inline-block;
+      padding: 15px;
+ 
+    }
+  .footer-list li a{
+    text-decoration: none;
+    color: black;
+    }
+  .social a{
+
+    padding: 15px;
+
+  }
+  
+  </style>
+ 
+ 
+</section>
+
+
+ 
+ 
+</body>
+</html>

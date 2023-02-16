@@ -1,0 +1,10 @@
+ body{
+  background-color: rgb(170, 193, 144) ;
+}
+
+.heading h1{
+text-align:center;
+background-color: white ;
+border-radius: 5px;
+height: 40px;
+  }

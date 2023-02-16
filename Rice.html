@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Production</title>
+    <link rel="stylesheet" href="Rice.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest">
+</head>
+<body>
+     
+   
+    
+  <div id="google_translate_element"></div> 
+          
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoodleTranslate"></script>
+  <script>
+    function loadGoodleTranslate(){
+      new google.translate.TranslateElement(
+        "google_translate_element"
+      )
+    }
+  </script>
+<br>
+  <header> 
+      <div class="navbar">
+        <ul>
+         <li><a href="Home.html"></a><b>Home</b></a></li>
+      
+          <li><b>About Us</b>
+            <ul class="dropdown">
+               <li><a href="team.html"><b>Team</b></a></li>
+               <li><a href="contact/contact.html"><b>Contact</b></a></li>
+            </ul>
+            
+          </li>
+          <li><b>Learn Crops</b>
+            <ul class="dropdown2">
+              <li><a href="wheat.html"><b>Wheat</b></a></li>
+              <li><a href="corn.html"><b>Corn</b></a></li>
+              <li><a href="Rice.html"><b>Rice</b></a></li>
+              <li><a href="More2.html"><b>More...</b></a></li>
+            </ul>
+          </li>
+          <li><a href="Farming.html"><b>Farming</b></a>
+            <ul class="dropdown3">
+              <li><a href="Agriculture.html"><b>Agriculture</b></a>
+                <li><a href="SubF.html"><b>Subsistence Farming</b></a></li>
+       
+              <li><a href="shiftingagri.html"><b>Shifting Agriculture</b></a></li>
+                <li><a href="Plantingagri.html"><b>Plantation Agriculture</b></a></li>
+                <li><a href="Intensive.html"><b>Intensive Farming</b></a></li>
+      
+                <li><a href="OF.html"><b>Organic Farming</b></a></li>
+      
+              <li><a href="More3.html"><b>More...</b></a></li>
+            </ul>
+          </li>
+          <li><a href="/facilities.html"> <b>Facilities</b></a></li>
+      
+         <li class="sign-in" id="signin"><a href="signin.html">  <button onclick="togglePopup()" class="first-button"><b>Sign in</b></button></a> 
+         </header>
+      
+       <style>
+        .first-button:hover{
+          background-color: rgb(76, 238, 89);
+          color: black;
+         }
+        .first-button {
+      border-radius: 10px;
+      border: none;
+      position: absolute;
+      width: fit-content;
+      top: 55%;
+      left: 110%;
+      color: white;
+      font-size: 18px;
+      font-family: 'Baloo Bhaina 2', cursive;  word-spacing: 5px;
+      font-weight: 500;
+      padding: 2px 5px;
+      transform: translate(-50%, -50%);
+      background: green;
+      /* box-shadow:  18px 18px 25px #1e1e1e, 
+                   -15px -15px 25px #1e1e1e; */
+      /* transition: box-shadow .35s ease !important; */
+      outline: none;
+      }
+      
+      .first-button:active {  
+      background: linear-gradient(145deg, green, green);
+      /* box-shadow:  5px 5px 10px green, 
+                   -5px -5px 10px green; */
+      border: none;
+      }
+      /* Popup active */
+      .popup.active .content {
+      transition: all 300ms ease-in-out;
+      transform: translate(-50%,-50%) scale(1);
+      }
+      </style>
+       
+      
+      </li>
+      </ul>
+      </div>
+      <hr> 
+ 
+<div class="headingcontainer">
+    <h1>Rice Production</h1>
+</div>
+
+<div class="container">
+
+
+<!-- NOT REQUIRED NOW ONLY FOR FUTUR REFERENCE     -->
+
+    <!-- <h2>These are the following steps you should follow :</h2>
+  
+    <p id="soil">Soil Preperation</p>
+       <li><a href="cornsoil.html"><img src="/images/soil.png" alt="location" width="18%"><br></a></li>
+
+ 
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="weather">Fertilizing</p>
+ <li><a href="#"><img src="/images/fertilizer.png" alt="location" width="18%"><br></a></li>
+
+  
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+ <p id="weather">Weather</p>
+ <li><a href="#"><img src="/images/weather.png" alt="location" width="18%"><br></a></li>
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="planting">Planting</p>
+ <li><a href="#"><img  src="/images/planting.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+ <p id="seeding">Watering</p>
+ <li><a href="#"><img  src="/images/watering-plants.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="caring">Caring</p>
+ <li><a href="#"><img  src="/images/care.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="pest">Pest Control</p>
+ <li><a href="#"><img  src="/images/insecticide.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="harvest">Harvesting</p>
+ <li><a href="#"><img  src="/images/harvesting.png" alt="location" width="18%"><br></a></li> -->
+<!-- NOT REQUIRED NOW ONLY FOR FUTUR REFERENCE     -->
+
+
+ <p>
+    Rice comes in different textures such as long-grain, medium- and short-grain. It cultivates with no trouble in your yard, in a garden or in buckets, given the correct amount of soil, moisture, and other nutrients.
+
+    Short-grain, medium-grain and long-grain rice flourish in rainy conditions, precisely standing wet patches of water or swamp-like conditions.
+    
+    When the rice grains mature, the water in which they develop must drain so that the crop can be harvested and milled. Once the harvesting and milling methods are complete, you can consume the rice.
+    
+    That was just a summary of how the process goes, let’s dive into details on how you’ll be growing your own rice and becoming a rice farmer, starting today!
+    
+<br>
+<br>
+
+<b>Selection of Site:</b>
+<br>
+<br>
+Ensure the earth/ground in the area you’re planting has a little acidic clay for the best outcomes. You can similarly insert your rice seeds in plastic buckets with the same soil.
+
+You can even convert your backyard into a small farm.
+
+PS: Anywhere you plant, ensure that you have a dependable water source and a plan to drain that water when time comes to harvest.
+
+Select a place that gets proper sunshine, because rice grows finest with bright light and comparatively hotter temperatures of at least 70° Fahrenheit (approximately 21° Celsius).
+Deliberate the season – your area should allow for 3 to 6 months of plant and flower growing. Rice requires an extended, warm growing season, thus an environment like the south of the United States is prime. If you don’t have lengthy periods of warmth, it would be better cultivating your rice inside.
+
+<br>
+<br>
+
+<b>Selection of Seed:</b>
+<br>
+<br>
+Buy rice seeds from any nursery or farmers supply market. There are six basic kinds of rice seed to pick from:
+
+Long-grain. This sort of rice yields grains that are light and fluffy. It is mostly a tad bit drier than other types of rice.
+Medium-grain. This variety is moist, tender, somewhat sticky, and slightly creamy when cooked. It has the same feel as long-grain.
+Short-grain. When prepared, short-grain rice turns out to be soft and sticky. It’s also somewhat sweeter – this is the rice to use for sushi.
+Sweet. This rice is occasionally termed sticky rice, and is mushy when cooked. It’s frequently used for frozen goods.
+Aromatic. This kind of rice has added aroma and fragrance than other types. This variety includes Jasmine, Basmati, Red, and Black Japonica.
+Arborio. This kind becomes creamy with a chewy center after cooking. It’s used mostly for risotto and other Italian meals.
+<br>
+<br>
+
+<b>Land Preperation:</b>
+<br>
+<br>
+Get a minimum of 1 to 2 ounces (28.5 to 56.5 g) of rice seeds to scatter. Immerse the seeds in water to prepare them for planting, letting them soak for a good 12 hours but no longer than 36 hours. Take out the seeds from the water after that.
+
+When your seeds are soaking, strategize where and in what way you want to plant them. Many choose to plant the seeds in rows to make it stress-free to water and remove weeds.
+Think to build troughs and blocking the ends so that the water continues to be contained and blocked. That being said, the rice field doesn’t have to be flooded, it just needs to remain wet.
+
+<br>
+<br>
+
+<b>Planting Seed:</b>
+<br>
+<br>
+Place the rice seeds all over the ground, in the course of the fall or spring season. Clear out weed plants, prepare the beds, and smoothen out the soil. If you are using buckets, fill them with a minimum of 6 inches (15 cm) of damp soil.
+
+At that moment, insert the rice seeds.
+
+It is important to remember that the space requires to be waterlogged. It’s considerably easier to flood limited reduced spaces than one large paddy field. If you’re planting outdoors, using some seed beds will be easier to cope and sustain.
+If you plant in the winter season, make sure to remove the weeds when springtime comes. The rice seeds require all the nutrients and soil area they can get.
+<br>
+<br>
+<b>Caring after seeding:</b>
+
+<br>
+<br>
+<b>Step 1:</b>
+Fill up the buckets or the garden area with at least 2 inches (5.1 cm) of water. But, this is just a traditional recommendation. Many individuals claim keeping the soil constantly soaked is enough – it doesn’t need to be flooded completely. This part is up to you – just ensure it’s wet.
+
+Add fertilizer or mulch to the dirt, marginally covering the rice seeds. This will naturally stuff the seeds beneath into the soil. Organic compost has moisture, so this is a good disposition – particularly in drier climates.
+<br>
+Keep check of the water height in the planting area, ensuring that the soil is constantly wet. If you’d prefer, uphold 2 inches (5.1 cm) of water level for the rice to develop.
+
+<br>
+<br>
+<b>Step 2:</b>
+Anticipate seeing rice seedlings grow after about 1 week.
+<br>
+If your crop is growing in buckets, you might want to move them at night to a warmer place if it gets too cold in the night. Rice grows well in warmth, and if the temperature drops, you’ll probably see slowed and stunted growth.
+Remember that flooding guidelines differ from person to person, commercial rice farmers sometimes have flooded rice paddy as deep as eight inches.. You might wish to increase the water when your plants ascents to the 7 inch mark. What strategies you exercise is up to you.
+
+<br>
+<br>
+<b>Step 3:</b>
+<b>Do Planting Adequately Apart</b>
+<br>
+Thin, or space out, the rice seeds to prevent crowding. For best results, thin out the seedlings no more than 4 inches (10.2 cm) apart in rows that range between 9 to 12 inches (22.9 to 30.5 cm) apart. Allow the seeds to grow up to 7 inches (17.8 cm) tall, which takes on average of about one month.
+
+Some people choose to start their plants off in a nursery bed since movement is always a part of the process anyway. If you follow this practice, transplant them when the seedling reaches 5-7 inches in height. They should be planted about a foot apart into a muddy bed.
+
+<br>
+<br>
+<b>Harvesting:</b>
+<br>
+<br>
+Cut down the stems and allow them to dry. When the rice has turns gold (around 2 weeks or so after draining), they’re all set. Cut the stalks just below the heads where the rice grains are located. You’ll find small pockets over the stalk that are clearly the hulls of the rice.
+
+Allow them to dry for 2-3 weeks. When the stalks are cut, cover them in newspaper and maintain dryness in a sunlit place for 2-3 weeks. The wetness needs to entirely dry out for you to access the grains efficiently.
+<br>
+<br>
+<b>Some Final Touches:</b>
+<br>
+<br>
+Remove the kernels from the hulls (brown covering). Once baked in the oven, let them cool. Then buff them using your hands (or a mortar and pestle) to remove the grains from the hulls. 
+
+Now you’ll see rice grains you’ll in fact recognize as the end product that reaches your plates of food ever so often, ready for cooking and consumption.
+
+To be noted, rice farming can be pretty wearisome – after which you’ll be pleased by modern technology.
+
+Before I forget, you should also know that you can make rice flour from this rice too!
+
+Take 1-2 cups of rice, rinse them up and soak them in water for 3 hours. After soaking, spread out rice on a dry towel and let it dry (until moist) for an hour. Grind these grains in a grinder, until fine in consistency. Take out this flour and use a sieve to sift it onto another container. You now have rice flour!
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ </p>
+ 
+
+
+
+</div>
+
+
+<section class="footer">
+  <div class="social" id="social-icons">
+    <a href=""><i class="fab fa-mail"><img src="/images/email.png" alt="loading..." width="25px"></i></a>
+    <a href=""><i class="fab fa-instagram"><img src="/images/instagram.png" alt="loading..." width="25px"></i></a>
+    <a href=""><i class="fab fa-twitter"><img src="/images/twitter.png" alt="loading..." width="25px"></i></a>
+    <a href=""><i class="fab fa-facebook-f"><img src="/images/facebook2.png" alt="loading..." width="25px"></i></a>
+  </div>
+
+  <ul class="footer-list">
+    <li>
+      <a href=" " id="">Home</a>
+    </li>
+     <li>  <a href=" ">About</a>
+     </li>
+     <li> <a href=" ">Contact Us</a>
+     </li> 
+     <li>  <a href=" ">Terms And Conditions</a>
+     </li>
+     <li> <a href=" ">Privacy Policy </a>
+    </li>
+  </ul>
+  <p class="copyright" id="copyright-text">
+<br>
+   Copyright &copy;	2021 Digital Agriculture
+  </p>
+
+
+  <style>
+    .footer{
+      margin-top: -38px;
+      padding: 20px;
+      text-align: center;
+      background-color: rgb(205, 205, 205);
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+
+
+
+       
+    }
+    .footer-list li{
+      list-style: none;
+      display: inline-block;
+      padding: 15px;
+ 
+    }
+  .footer-list li a{
+    text-decoration: none;
+    color: black;
+    }
+  .social a{
+
+    padding: 15px;
+
+  }
+  
+  </style>
+ 
+ 
+</section>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corn Production</title>
+    <link rel="stylesheet" href="corn.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest">
+</head>
+<body>
+     
+ 
+     
+  <div id="google_translate_element"></div> 
+          
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoodleTranslate"></script>
+  <script>
+    function loadGoodleTranslate(){
+      new google.translate.TranslateElement(
+        "google_translate_element"
+      )
+    }
+  </script>
+<br>
+  <header> 
+      <div class="navbar">
+        <ul>
+         <li><a href="Home.html"></a><b>Home</b></a></li>
+      
+          <li><b>About Us</b>
+            <ul class="dropdown">
+               <li><a href="team.html"><b>Team</b></a></li>
+               <li><a href="contact/contact.html"><b>Contact</b></a></li>
+            </ul>
+            
+          </li>
+          <li><b>Learn Crops</b>
+            <ul class="dropdown2">
+              <li><a href="wheat.html"><b>Wheat</b></a></li>
+              <li><a href="corn.html"><b>Corn</b></a></li>
+              <li><a href="Rice.html"><b>Rice</b></a></li>
+              <li><a href="More2.html"><b>More...</b></a></li>
+            </ul>
+          </li>
+          <li><a href="Farming.html"><b>Farming</b></a>
+            <ul class="dropdown3">
+              <li><a href="Agriculture.html"><b>Agriculture</b></a>
+                <li><a href="SubF.html"><b>Subsistence Farming</b></a></li>
+       
+              <li><a href="shiftingagri.html"><b>Shifting Agriculture</b></a></li>
+                <li><a href="Plantingagri.html"><b>Plantation Agriculture</b></a></li>
+                <li><a href="Intensive.html"><b>Intensive Farming</b></a></li>
+      
+                <li><a href="OF.html"><b>Organic Farming</b></a></li>
+      
+              <li><a href="More3.html"><b>More...</b></a></li>
+            </ul>
+          </li>
+          <li><a href="/facilities.html"> <b>Facilities</b></a></li>
+      
+         <li class="sign-in" id="signin"><a href="signin.html">  <button onclick="togglePopup()" class="first-button"><b>Sign in</b></button></a> 
+         </header>
+      
+       <style>
+        .first-button:hover{
+          background-color: rgb(76, 238, 89);
+          color: black;
+         }
+        .first-button {
+      border-radius: 10px;
+      border: none;
+      position: absolute;
+      width: fit-content;
+      top: 55%;
+      left: 110%;
+      color: white;
+      font-size: 18px;
+      font-family: 'Baloo Bhaina 2', cursive;  word-spacing: 5px;
+      font-weight: 500;
+      padding: 2px 5px;
+      transform: translate(-50%, -50%);
+      background: green;
+      /* box-shadow:  18px 18px 25px #1e1e1e, 
+                   -15px -15px 25px #1e1e1e; */
+      /* transition: box-shadow .35s ease !important; */
+      outline: none;
+      }
+      
+      .first-button:active {  
+      background: linear-gradient(145deg, green, green);
+      /* box-shadow:  5px 5px 10px green, 
+                   -5px -5px 10px green; */
+      border: none;
+      }
+      /* Popup active */
+      .popup.active .content {
+      transition: all 300ms ease-in-out;
+      transform: translate(-50%,-50%) scale(1);
+      }
+      </style>
+       
+      
+      </li>
+      </ul>
+      </div>
+      <hr> 
+ 
+<div class="headingcontainer">
+    <h1>Corn Production</h1>
+</div>
+
+<div class="container">
+    <!-- <h2>These are the following steps you should follow :</h2>
+  
+    <p id="soil">Soil Preperation</p>
+       <li><a href="cornsoil.html"><img src="/images/soil.png" alt="location" width="18%"><br></a></li>
+
+ 
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="weather">Fertilizing</p>
+ <li><a href="#"><img src="/images/fertilizer.png" alt="location" width="18%"><br></a></li>
+
+  
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+ <p id="weather">Weather</p>
+ <li><a href="#"><img src="/images/weather.png" alt="location" width="18%"><br></a></li>
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="planting">Planting</p>
+ <li><a href="#"><img  src="/images/planting.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+ <p id="seeding">Watering</p>
+ <li><a href="#"><img  src="/images/watering-plants.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="caring">Caring</p>
+ <li><a href="#"><img  src="/images/care.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="pest">Pest Control</p>
+ <li><a href="#"><img  src="/images/insecticide.png" alt="location" width="18%"><br></a></li>
+
+ <img src="/images/down-arrow.png" id="down-arrow" alt="" width="40px">
+
+ <p id="harvest">Harvesting</p>
+ <li><a href="#"><img  src="/images/harvesting.png" alt="location" width="18%"><br></a></li> -->
+
+ <p>Maize, also known as corn in the US, Canada & Australia is the most widely produced crop all over the world. Maize have carbohydrate(70%) , protein(10%) and oil(4%). All these elements are very important for the human body. Maize is a ripe and high yielding crop in a short time as compared to other crops. If the farmer do farming with a proper guidance and latest technology, then they can earn good profit from the high yield of this crop.
+<br>
+<br>
+ <b>Climatic Requirements:</b>
+
+<br>
+<br>
+    Maize can be cultivated in different types of climates, but the growth, development and yield of maize is found more in the hot regions. It is a hot season crop. Night and day temperatures should be higher for its deposition. The maize crop requires sufficient moisture in the soil since its inception. Temperature of 18 to 23 degree Celsius for deposition and 28 degree Celsius temperature is considered good for growth and development.
+    
+    <br>
+    <br>
+    <b>Suitable land:</b>  
+<br>
+<br>
+Maize can be grown in all types of soil. But for good growth and productivity of maize, loam and medium to heavy soil having adequate amount of bacteria and proper drainage is suitable. Saline and alkaline soil are not suitable for maize cultivation.
+<br>
+<br>
+<b>Land preparation:</b>  
+
+Do the first plowing with soil plow. then with harrow or country plow, after every plowing, pluck or add pork or icing to break the soil piles and straighten the field. If there is less moisture in the soil, then plowing should be done. In irrigated condition, ridges should be made at a distance of 60 centimeters, which helps in easy drainage and the crop also grows well.
+<br>
+<br>
+<b>Intercrops:</b>  
+<br>
+<br>
+Maize ripening species are available at different periods, due to which maize can be grown easily as a variety of intercropping farming. The main intercropping practices of maize are as follows,
+<br>
+Maize + Udad, Guar and Mung.
+<br>
+Maize + Bean, Ladyfinger, Barvati and Green Coriander
+<br>
+Maize + Sesame, Soyabean etc.
+
+<br>
+<br>
+<b> Seed treatment:</b> 
+<br>
+<br>
+
+Seed treatment is very important step to protect the crop from diseases at an early stage. Do seed treatment first with fungicide, then with insecticide and finally with biological vaccine. Dry the seeds after each step, the step is as follows-
+<br>
+Fungicide Seed Treatment  :  Treat pre sowing seeds at the rate of 3 grams per kg of thyram or carbendazim, mix them in water and make a wet paste and apply on the seeds.
+<br>
+Pesticide Seed Treatment  :  Seed treatment with pesticide is necessary to protect seeds and new plants from sap and pests living in the soil. Treat the seeds with thiomethochem or imidacloprid at the rate of 1 to 2 grams per kg of seeds.
+<br>
+Organic vaccines :  After treatment with fungicide and insecticide, sow the seeds immediately after treating the seeds with Azotobacter 5 grams per kg.
+<br>
+<br>
+<b>Time of sowing:</b>  
+<br>
+<br>
+
+Sow by the end of May for the main crop.
+<br>
+Sow autumn corn from October to November.
+<br>
+The correct time for sowing maize in the spring is mid-February in the third week of January.
+<br>
+Due to delay in sowing, due to high temperature and low moisture, seed is reduced.
+<br>
+If sowing is delayed due to lack of rain, then inter-cropping of fruit crops should be done.
+<br>
+<br>
+<b>Cropping activities:</b>  
+<br>
+<br>
+
+In unirrigated areas, black polythene or paddy or wheat pulao or mulch of dried grass should be laid between the queues. Weeds are controlled by this and soil moisture is preserved in drought conditions.
+<br>
+Where sowing has been done on straight land instead of rams, then soil should be offered at the knee of the crop. This gives support to plants and crops do not fall.
+<br>
+Maize crop cannot bear standing water in the field at all, it is necessary to properly manage the drainage from the field.
+<br>
+<br>
+<b>Irrigation:</b>  
+<br>
+<br>
+The spring crop requires more irrigation. Not irrigating at the right time leads to a huge reduction in yields. First irrigation should be done 15 to 20 days after sowing. After that, when the crop is up to the knees, when the flowers are grown, when the husk is formed and while the grain is being fed, do irrigation. The crop needs 5-6 irrigation.
+
+Stages of irrigation - Irrigation is very important when new plants are produced, crops are up to the knees, male flowers are out and corn is formed. Irrigate up to 90 percent grain filling.
+<br>
+<br>
+<b>Harvesting:</b>  
+<br>
+<br>
+When the leaves covering the corn are yellow or brown and the moisture of the seeds is less than 30 percent, the crop should be harvested; the plant remains green after cutting the corn, use it for animal feed.
+
+Processing and value addition
+
+Dry the corn in the sun until the grain becomes hard and the moisture in it is 12 to 14 percent. Then you can take the corn in the sack and take it to the market. To remove the grain from the corn, keep in mind that they are so dry that they do not cause damage while threshing with the hand or thresher.
+<br>
+<br>
+
+<b>Yield:</b>  
+<br>
+<br>
+On the above method, the average yield from maize crop should be 35 to 55 quintal from normal variety and 55 to 65 quintal per hectare from hybrid variety.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+</p> 
+ 
+
+
+
+</div>
+
+
+ 
+<section class="footer">
+  <div class="social" id="social-icons">
+    <a href=""><i class="fab fa-mail"><img src="/images/email.png" alt="loading..." width="25px"></i></a>
+    <a href=""><i class="fab fa-instagram"><img src="/images/instagram.png" alt="loading..." width="25px"></i></a>
+    <a href=""><i class="fab fa-twitter"><img src="/images/twitter.png" alt="loading..." width="25px"></i></a>
+    <a href=""><i class="fab fa-facebook-f"><img src="/images/facebook2.png" alt="loading..." width="25px"></i></a>
+  </div>
+
+  <ul class="footer-list">
+    <li>
+      <a href=" " id="">Home</a>
+    </li>
+     <li>  <a href=" ">About</a>
+     </li>
+     <li> <a href=" ">Contact Us</a>
+     </li> 
+     <li>  <a href=" ">Terms And Conditions</a>
+     </li>
+     <li> <a href=" ">Privacy Policy </a>
+    </li>
+  </ul>
+  <p class="copyright" id="copyright-text">
+<br>
+   Copyright &copy;	2021 Digital Agriculture
+  </p>
+
+
+  <style>
+    .footer{
+      margin-top: -38px;
+      padding: 20px;
+      text-align: center;
+      background-color: rgb(205, 205, 205);
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+
+
+
+       
+    }
+    .footer-list li{
+      list-style: none;
+      display: inline-block;
+      padding: 15px;
+ 
+    }
+  .footer-list li a{
+    text-decoration: none;
+    color: black;
+    }
+  .social a{
+
+    padding: 15px;
+
+  }
+  
+  </style>
+ 
+ 
+</section>
+</body>
+</html>

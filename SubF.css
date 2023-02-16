@@ -1,0 +1,99 @@
+body{
+    background-color: ivory;
+}
+.navbar{
+    display: inline-block;
+    overflow: hidden;
+    /* background-color: rgb(102, 155, 21); */
+    margin-top: 8px;
+    margin-left: 0px;
+    width: 100%;
+    height: 60px;
+    opacity: 90%;
+    border-radius: 10px;
+   }
+  
+  .navbar li {
+  
+    display: inline-block;
+    text-align: center;
+    margin-top: -15px;
+   
+  }
+  .navbar p{
+    text-decoration: underline;
+     margin-left: 10px;
+     
+  }
+  
+  .navbar li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 30px;
+    opacity: 100%;
+      
+  }
+  
+  .navbar a:hover {
+     opacity: 100%;
+    color: rgb(5, 110, 19);
+    }
+  .navbar li.active{
+    text-decoration: underline;
+  }
+
+.agrinavbar{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    background-image: url(/images/agriculturenavbar.png);
+    opacity: 80%;
+    border-radius: 10px;
+   }
+
+   .agrinavbar li {
+
+    display: inline-block;
+    text-align: center;
+     margin-left: 550px;
+     margin-left: 30px;
+
+
+     
+  }
+  .agrinavbar li a{
+    text-decoration: none;
+    color:ivory;
+    font-size: 23px;
+    font-family: 'Baloo Bhai 2', cursive;
+     font-size:50px;
+    
+      
+  }
+.history p{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    background-color: rgb(181, 181, 181);
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.history h2{
+    margin-left: 50px;
+}
+.history li{
+    margin-left: 50px;
+    font-size: 20px;
+}
+    
+
+
+
+
